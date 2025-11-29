@@ -8,9 +8,9 @@ function Header() {
     <header>
       <div className="logo">SURAJ</div>
 
-      {/* Add OPEN class when menu is active */}
-      <div 
-        className={open ? "hamburger open" : "hamburger"} 
+      {/* Hamburger */}
+      <div
+        className={open ? "hamburger open" : "hamburger"}
         onClick={() => setOpen(!open)}
       >
         <span></span>
@@ -18,11 +18,13 @@ function Header() {
         <span></span>
       </div>
 
+      {/* Navigation */}
       <nav>
         <ul className={open ? "open" : ""}>
           <li>Home</li>
           <li>About</li>
           <li>Projects</li>
+          <li>Skills</li>
           <li>Contacts</li>
         </ul>
       </nav>

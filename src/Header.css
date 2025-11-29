@@ -1,80 +1,60 @@
+/* --- Header --- */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: #111;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 /* --- Logo --- */
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #00eaff;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #00eaff;
 }
 
-/* --- Nav Links --- */
+/* --- Navigation Links --- */
 nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
 }
 
 nav ul li {
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 nav ul li:hover {
-    color: #00eaff;
+  color: #00eaff;
 }
 
-/* --- Hamburger Button --- */
+/* --- Hamburger --- */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+   margin-left: 90px;
 }
 
 .hamburger span {
-    width: 28px;
-    height: 3px;
-    background: #fff;
-    transition: 0.4s;
-    margin-left: 120px;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: 0.4s;
 }
 
-/* --- Mobile Menu --- */
-@media (max-width: 768px) {
-    nav ul {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background: #111;
-        padding: 30px 0;
-        text-align: center;
-        gap: 30px;
-        display: none;
-      
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
+/* Hamburger Animation */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
@@ -84,5 +64,30 @@ nav ul li:hover {
 }
 
 .hamburger.open span:nth-child(3) {
-  opacity: 0;     /* hide bottom bar */
+  opacity: 0;
+}
+
+/* --- Mobile Menu --- */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    gap: 20px;
+    display: none;
+   
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
