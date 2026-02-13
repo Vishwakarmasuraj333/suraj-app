@@ -1,6 +1,6 @@
 import "./About.css";
 import myImg from ".src/assets/ss.jpeg";
-import resumePDF from "src./assets/SURAJ RESUME (1).pdf";
+import resumePDF from ".src/assets/SURAJ RESUME (1).pdf";
 
 
 function About() {
