@@ -1,5 +1,5 @@
 import "./About.css";
-import myImg from "./assets/ss.jpeg";
+import myImg from ".src/assets/ss.jpeg";
 import resumePDF from "./assets/SURAJ RESUME (1).pdf";
 
 
