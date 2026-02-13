@@ -2,10 +2,9 @@ import "./About.css";
 import myImg from "../assets/ss.jpeg";
 import resumePDF from "../assets/SURAJ RESUME (1).pdf";
 
-
 function About() {
     return (
-        <section className="about-section" >
+        <section className="about-section">
             <div className="about-img">
                 <img src={myImg} alt="Frontend Developer" />
             </div>
@@ -16,10 +15,9 @@ function About() {
 
                 <p>
                     I am a passionate <strong>Frontend Developer</strong> who loves
-                    creating clean, modern, and user-friendly web interfaces. I focus on
-                    writing elegant code, building responsive layouts, and turning ideas
-                    into visually appealing digital experiences.
-                </p><br /><br />
+                    creating clean, modern, and user-friendly web interfaces.
+                </p>
+
                 <div className="about-buttons">
                     <button className="btn hire">Hire Me</button>
 
@@ -27,7 +25,6 @@ function About() {
                         Download Resume
                     </a>
                 </div>
-
             </div>
         </section>
     );
